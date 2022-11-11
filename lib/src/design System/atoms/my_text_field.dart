@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
-  const MyTextField({super.key});
+  MyTextField({super.key});
 
+  String? hintText;
+  Widget? label;
+  
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return TextFormField(
+      decoration: InputDecoration(
+        hintText: hintText,
+        label: label,
+      ),
+    );
   }
 }

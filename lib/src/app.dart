@@ -8,10 +8,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: '/home',
       routes: {
-        '/home': (context) => const Login(),
-        '/login': (context) => const SplashScreen(),
+        '/home': (context) => const SplashScreen(),
+        '/login': (context) => const Login(),
       },
     );
   }
