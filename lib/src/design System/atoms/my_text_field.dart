@@ -5,7 +5,7 @@ class MyTextField extends StatelessWidget {
 
   String? hintText;
   Widget? label;
-  
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(

@@ -12,6 +12,7 @@ class MyTextWidget extends StatelessWidget {
   double? fontSize;
   FontWeight? fontWeight;
   Color? color;
+  String? fontFamily;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +22,7 @@ class MyTextWidget extends StatelessWidget {
         fontSize: fontSize,
         fontWeight: fontWeight,
         color: color,
+        fontFamily: fontFamily,
       ),
     );
   }
