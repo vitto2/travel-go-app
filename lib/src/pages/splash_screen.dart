@@ -17,22 +17,35 @@ class SplashScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const SizedBox(
-              height: 60,
+            Column(
+              children: [
+                MyTextWidget(
+                  text: "Hei, Welcome to",
+                  fontSize: 25,
+                  fontWeight: FontWeight.w300,
+                  color: Colors.white,
+                ),
+                MyTextWidget(
+                  text: "TravelGO!",
+                  fontSize: 60,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                ),
+                const SizedBox(
+                  height: 180,
+                )
+              ],
             ),
-            MyTextWidget(
-              text: "Hei, Welcome to",
-              fontSize: 25,
-              fontWeight: FontWeight.w300,
-              color: Colors.white,
-            ),
-            MyTextWidget(
-              text: "TravelGO!",
-              fontSize: 60,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            GestureDetector(
+              onTap: (() {}),
+              child: const Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Colors.white,
+                size: 50,
+              ),
+            )
           ],
         ),
       ),

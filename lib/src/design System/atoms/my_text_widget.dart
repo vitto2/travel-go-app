@@ -6,6 +6,7 @@ class MyTextWidget extends StatelessWidget {
       this.fontSize,
       this.fontWeight,
       required this.text,
+      this.fontFamily,
       super.key});
 
   String text = "";
