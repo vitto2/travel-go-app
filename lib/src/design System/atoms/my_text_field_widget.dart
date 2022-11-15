@@ -6,6 +6,7 @@ class MyTextField extends StatelessWidget {
     this.prefixIcon,
     this.hintText,
     required this.label,
+    this.keyboardType,
     super.key,
   });
 
@@ -16,13 +17,16 @@ class MyTextField extends StatelessWidget {
     borderRadius: BorderRadius.circular(50.0),
   );
   Icon? prefixIcon;
-
+  TextInputType? keyboardType;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextFormField(
+        keyboardType: keyboardType,
         decoration: InputDecoration(
+          labelStyle: const TextStyle(color: Colors.white),
+          hintStyle: const TextStyle(color: Colors.white),
           hintText: hintText,
           label: label,
           border: outlineborder,

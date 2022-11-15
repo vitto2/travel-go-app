@@ -17,6 +17,7 @@ class InputTextsLoginPage extends StatelessWidget {
               width: 350,
               height: 80,
               child: MyTextField(
+                keyboardType: TextInputType.emailAddress,
                 hintText: 'mail@example.com',
                 label: const Text("E-mail"),
                 prefixIcon: const Icon(Icons.email),
