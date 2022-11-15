@@ -4,24 +4,23 @@ class MyTextField extends StatelessWidget {
   MyTextField({
     required this.data,
     required this.obscureText,
-    this.suffixIcon,
     required this.prefixIcon,
-    this.hintText,
     required this.label,
     this.keyboardType,
+    this.hintText,
     super.key,
   });
 
-  Widget? suffixIcon;
+  //Widget suffixIcon = const Icon(Icons.abc);
   String? hintText;
   Widget? label;
-  OutlineInputBorder outlineborder = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(50.0),
-  );
   Icon prefixIcon;
   TextInputType? keyboardType;
   bool obscureText = false;
-  IconThemeData data; 
+  IconThemeData data;
+  OutlineInputBorder outlineborder = OutlineInputBorder(
+    borderRadius: BorderRadius.circular(50.0),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +39,6 @@ class MyTextField extends StatelessWidget {
             data: data,
             child: prefixIcon,
           ),
-          suffixIcon: suffixIcon,
         ),
       ),
     );
