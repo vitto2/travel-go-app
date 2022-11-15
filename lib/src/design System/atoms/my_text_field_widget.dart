@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
   MyTextField({
+    required this.data,
     required this.obscureText,
     this.suffixIcon,
-    this.prefixIcon,
+    required this.prefixIcon,
     this.hintText,
     required this.label,
     this.keyboardType,
@@ -17,9 +18,10 @@ class MyTextField extends StatelessWidget {
   OutlineInputBorder outlineborder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(50.0),
   );
-  Icon? prefixIcon;
+  Icon prefixIcon;
   TextInputType? keyboardType;
   bool obscureText = false;
+  IconThemeData data; 
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +36,10 @@ class MyTextField extends StatelessWidget {
           hintText: hintText,
           label: label,
           border: outlineborder,
-          prefixIcon: prefixIcon,
+          prefixIcon: IconTheme(
+            data: data,
+            child: prefixIcon,
+          ),
           suffixIcon: suffixIcon,
         ),
       ),

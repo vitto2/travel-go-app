@@ -22,6 +22,7 @@ class InputTextsLoginPage extends StatelessWidget {
                 hintText: 'mail@example.com',
                 label: const Text("E-mail"),
                 prefixIcon: const Icon(Icons.email),
+                data: const IconThemeData(color: Colors.white),
               ),
             ),
             SizedBox(
@@ -34,6 +35,7 @@ class InputTextsLoginPage extends StatelessWidget {
                 hintText: '••••••••',
                 prefixIcon: const Icon(Icons.lock),
                 suffixIcon: const Icon(Icons.remove_red_eye),
+                data: const IconThemeData(color: Colors.white),
               ),
             ),
             SizedBox(
