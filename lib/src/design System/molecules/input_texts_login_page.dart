@@ -29,6 +29,7 @@ class InputTextsLoginPage extends StatelessWidget {
                 label: const Text("Password"),
                 hintText: '••••••••',
                 prefixIcon: const Icon(Icons.lock),
+                suffixIcon: const Icon(Icons.remove_red_eye),
               ),
             ),
             SizedBox(

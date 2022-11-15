@@ -9,26 +9,28 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/travelgoimage.png"),
-            fit: BoxFit.fill,
+      body: SingleChildScrollView(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/travelgoimage.png"),
+              fit: BoxFit.fill,
+            ),
           ),
-        ),
-        child: Column(
-          children: const [
-            SizedBox(
-              height: 100,
-            ),
-            TitleLoginPage(),
-            SizedBox(
-              height: 100,
-            ),
-            InputTextsLoginPage(),
-          ],
+          child: Column(
+            children: const [
+              SizedBox(
+                height: 100,
+              ),
+              TitleLoginPage(),
+              SizedBox(
+                height: 100,
+              ),
+              InputTextsLoginPage(),
+            ],
+          ),
         ),
       ),
     );

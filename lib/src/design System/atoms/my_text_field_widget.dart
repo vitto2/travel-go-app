@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
-  MyTextField({this.prefixIcon,  this.hintText, required this.label, super.key});
+  MyTextField({
+    this.suffixIcon,
+    this.prefixIcon,
+    this.hintText,
+    required this.label,
+    super.key,
+  });
 
+  Widget? suffixIcon;
   String? hintText;
   Widget? label;
   OutlineInputBorder outlineborder = OutlineInputBorder(
@@ -20,6 +27,7 @@ class MyTextField extends StatelessWidget {
           label: label,
           border: outlineborder,
           prefixIcon: prefixIcon,
+          suffixIcon: suffixIcon,
         ),
       ),
     );
