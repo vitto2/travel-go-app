@@ -27,6 +27,7 @@ class InputTextsLoginPage extends StatelessWidget {
               width: 350,
               height: 80,
               child: MyTextField(
+                keyboardType: TextInputType.visiblePassword,
                 label: const Text("Password"),
                 hintText: '••••••••',
                 prefixIcon: const Icon(Icons.lock),
