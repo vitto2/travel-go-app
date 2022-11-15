@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelgoapp/src/design%20System/atoms/my_text_widget.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -16,7 +17,23 @@ class SplashScreen extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Column(
-        children: const [],
+        children: [
+          const SizedBox(
+            height: 60,
+          ),
+          MyTextWidget(
+            text: "Hei, Welcome to",
+            fontSize: 25,
+            fontWeight: FontWeight.w300,
+            color: Colors.white,
+          ),
+          MyTextWidget(
+            text: "TravelGO!",
+            fontSize: 60,
+            fontWeight: FontWeight.w700,
+            color: Colors.white,
+          ),
+        ],
       ),
     ));
   }
