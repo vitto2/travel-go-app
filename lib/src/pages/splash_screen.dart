@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travelgoapp/src/design%20System/atoms/%20my_icon_button.dart';
+import 'package:travelgoapp/src/design%20System/atoms/%20my_icon_button_widget.dart';
 import 'package:travelgoapp/src/design%20System/atoms/my_text_widget.dart';
 
 class SplashScreen extends StatelessWidget {

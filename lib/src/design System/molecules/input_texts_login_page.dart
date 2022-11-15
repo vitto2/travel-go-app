@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../atoms/my_button.dart';
-import '../atoms/my_text_field.dart';
+import '../atoms/my_button_widget.dart';
+import '../atoms/my_text_field_widget.dart';
 
 class InputTextsLoginPage extends StatelessWidget {
   const InputTextsLoginPage({super.key});
