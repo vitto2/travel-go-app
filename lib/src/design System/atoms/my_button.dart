@@ -1,19 +1,35 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
-  MyButton({color, required this.text, super.key});
+  MyButton(
+      {this.backgroundColor,
+      this.textColor,
+      this.fontSize,
+      required this.text,
+      this.shape,
+      super.key});
 
   String text;
-  Color? color;
+  Color? backgroundColor;
+  Color? textColor;
+  double? fontSize;
+  OutlinedBorder? shape;
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
-        backgroundColor: color,
+        backgroundColor: backgroundColor,
+        shape: shape,
       ),
-      child: Text(text),
+      child: Text(
+        text,
+        style: TextStyle(
+          color: textColor,
+          fontSize: fontSize,
+        ),
+      ),
     );
   }
 }
