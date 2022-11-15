@@ -21,6 +21,12 @@ class MyTextField extends StatelessWidget {
   OutlineInputBorder outlineborder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(50.0),
   );
+  InputBorder enabledBorder = OutlineInputBorder(
+    borderRadius: BorderRadius.circular(50.0),
+    borderSide: const BorderSide(
+      color: Colors.white,
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +41,7 @@ class MyTextField extends StatelessWidget {
           hintText: hintText,
           label: label,
           border: outlineborder,
+          enabledBorder: enabledBorder,
           prefixIcon: IconTheme(
             data: data,
             child: prefixIcon,
