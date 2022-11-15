@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelgoapp/src/design%20System/atoms/%20my_icon_button.dart';
 import 'package:travelgoapp/src/design%20System/atoms/my_text_widget.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -38,12 +39,14 @@ class SplashScreen extends StatelessWidget {
                 )
               ],
             ),
-            GestureDetector(
-              onTap: (() {}),
-              child: const Icon(
-                Icons.arrow_forward_ios_outlined,
+            MyIconButton(
+              size: 60.0,
+              onPressed: (() {
+                Navigator.of(context).pushReplacementNamed('/login');
+              }),
+              icon: Image.asset(
+                'assets/icons/arrow-right.png',
                 color: Colors.white,
-                size: 50,
               ),
             )
           ],
