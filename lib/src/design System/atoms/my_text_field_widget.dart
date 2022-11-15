@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyTextField extends StatelessWidget {
   MyTextField({
+    required this.obscureText,
     this.suffixIcon,
     this.prefixIcon,
     this.hintText,
@@ -18,13 +19,14 @@ class MyTextField extends StatelessWidget {
   );
   Icon? prefixIcon;
   TextInputType? keyboardType;
+  bool obscureText = false;
 
-  
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextFormField(
+        obscureText: obscureText,
         keyboardType: keyboardType,
         decoration: InputDecoration(
           labelStyle: const TextStyle(color: Colors.white),

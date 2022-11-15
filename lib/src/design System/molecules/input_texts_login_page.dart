@@ -17,6 +17,7 @@ class InputTextsLoginPage extends StatelessWidget {
               width: 350,
               height: 80,
               child: MyTextField(
+                obscureText: false,
                 keyboardType: TextInputType.emailAddress,
                 hintText: 'mail@example.com',
                 label: const Text("E-mail"),
@@ -27,6 +28,7 @@ class InputTextsLoginPage extends StatelessWidget {
               width: 350,
               height: 80,
               child: MyTextField(
+                obscureText: true,
                 keyboardType: TextInputType.visiblePassword,
                 label: const Text("Password"),
                 hintText: '••••••••',
